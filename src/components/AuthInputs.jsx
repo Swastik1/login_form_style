@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { styled } from "styled-components";
 import ButtonStyled from "./Button.jsx";
-import CustomInput from "./Input.jsx";
+import Input from "./Input.jsx";
 
 const ControlDiv = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ export default function AuthInputs() {
   return (
     <div id="auth-inputs">
       <ControlDiv>
-        <CustomInput
+        <Input
           label="Email"
           type="email"
           $invalid={emailNotValid}
@@ -43,7 +43,7 @@ export default function AuthInputs() {
           // }}
         />
 
-        <CustomInput
+        <Input
           label="Password"
           type="password"
           $invalid={passwordNotValid}
